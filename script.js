@@ -1,5 +1,4 @@
 const grid = document.getElementById("projectsGrid");
-const input = document.getElementById("projectSearch");
 document.getElementById("year").textContent = new Date().getFullYear();
 
 function card(p) {
@@ -27,22 +26,4 @@ function card(p) {
   `;
 }
 
-function render(list) {
-  grid.innerHTML = list.map(card).join("");
-}
-
-function filterProjects(q) {
-  const query = q.trim().toLowerCase();
-  if (!query) return window.PROJECTS;
-
-  return window.PROJECTS.filter(p => {
-    const hay = `${p.title} ${p.desc} ${p.tags.join(" ")}`.toLowerCase();
-    return hay.includes(query);
-  });
-}
-
-render(window.PROJECTS);
-
-input.addEventListener("input", (e) => {
-  render(filterProjects(e.target.value));
-});
+grid.innerHTML = window.PROJECTS.map(card).join("");

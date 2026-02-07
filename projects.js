@@ -1,8 +1,7 @@
-// Edit/add projects here
 window.PROJECTS = [
   {
     title: "UWO Patent Website",
-    desc: "Web app to search for inactive/expired patents (lapsed due to fees/time). Clean UI + ingestion pipeline.",
+    desc: "Web app to search for inactive/expired patents (lapsed due to fees/time). Clean UI and ingestion pipeline.",
     tags: ["Python", "FastAPI", "PostgreSQL", "Next.js"],
     repo: "https://github.com/BilalSaad1/UWO_Patent_Website",
     demo: ""
