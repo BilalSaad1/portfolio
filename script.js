@@ -1,29 +1,20 @@
-const grid = document.getElementById("projectsGrid");
-document.getElementById("year").textContent = new Date().getFullYear();
+document.addEventListener("DOMContentLoaded", () => {
+  const yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-function card(p) {
-  const tags = p.tags.map(t => `<span class="tag">${t}</span>`).join("");
-  const demoBtn = p.demo
-    ? `<a class="btn small" href="${p.demo}" target="_blank" rel="noreferrer">Live Demo</a>`
-    : "";
+  const toggleBtn = document.getElementById("toggleResume");
+  const resumePanel = document.getElementById("resumePanel");
 
-  return `
-    <div class="card">
-      <div class="project-title">
-        <h3>${p.title}</h3>
-        <a class="btn small" href="${p.repo}" target="_blank" rel="noreferrer">Repo</a>
-      </div>
+  if (toggleBtn && resumePanel) {
+    toggleBtn.textContent = resumePanel.classList.contains("is-hidden")
+      ? "Show Resume"
+      : "Hide Resume";
 
-      <p class="project-desc">${p.desc}</p>
+    toggleBtn.addEventListener("click", () => {
+      const hidden = resumePanel.classList.toggle("is-hidden");
+      toggleBtn.textContent = hidden ? "Show Resume" : "Hide Resume";
+      toggleBtn.setAttribute("aria-expanded", hidden ? "false" : "true");
+    });
+  }
 
-      <div class="tag-row">${tags}</div>
-
-      <div class="project-actions">
-        ${demoBtn}
-        <a class="btn small ghost" href="${p.repo}" target="_blank" rel="noreferrer">Details</a>
-      </div>
-    </div>
-  `;
-}
-
-grid.innerHTML = window.PROJECTS.map(card).join("");
+});

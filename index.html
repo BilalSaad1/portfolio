@@ -9,18 +9,15 @@
 </head>
 
 <body>
-  <!-- Background layers -->
   <div class="bg">
     <div class="stars"></div>
     <div class="stars stars2"></div>
     <div class="stars stars3"></div>
   </div>
 
-  <!-- NAV -->
   <header class="header">
     <nav class="nav">
       <a class="logo" href="#top">&lt;Portfolio /&gt;</a>
-
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
@@ -33,7 +30,6 @@
     </nav>
   </header>
 
-  <!-- HERO -->
   <section id="top" class="hero">
     <div class="hero-inner">
       <div class="hero-avatar-wrap">
@@ -68,7 +64,6 @@
 
   <main class="container">
 
-    <!-- ABOUT -->
     <section id="about" class="section">
       <h2>About</h2>
       <div class="card">
@@ -89,7 +84,6 @@
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
     <section id="experience" class="section">
       <h2>Experience</h2>
 
@@ -98,7 +92,12 @@
           <div class="row">
             <div>
               <h3>Open-Source Software Developer</h3>
-              <p class="muted">Western University • UWO Expired Patent Search</p>
+              <p class="muted">
+                Western University •
+                <a class="inline-link" href="https://freeip.uwo.ca/" target="_blank" rel="noreferrer">
+                    UWO Expired Patent Search
+                </a>
+              </p>
             </div>
             <div class="muted">Sep 2025 – Present</div>
           </div>
@@ -126,13 +125,11 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects" class="section">
       <h2>Projects</h2>
       <div id="projectsGrid" class="grid"></div>
     </section>
 
-    <!-- SKILLS -->
     <section id="skills" class="section">
       <h2>Skills</h2>
 
@@ -159,27 +156,29 @@
       </div>
     </section>
 
-    <!-- RESUME -->
     <section id="resume" class="section">
-      <div class="section-head">
-        <h2>Resume</h2>
-        <div class="resume-actions">
-          <a class="btn" href="resume.pdf" target="_blank" rel="noreferrer">Open in new tab</a>
-          <a class="btn primary" href="resume.pdf" download>Download</a>
+        <div class="section-head">
+            <h2>Resume</h2>
+            <div class="resume-actions">
+                <button class="btn" id="toggleResume" type="button" aria-expanded="true">
+                  Hide Resume
+                </button>
+                <a class="btn" href="resume.pdf" target="_blank" rel="noreferrer">Open in new tab</a>
+                <a class="btn primary" href="resume.pdf" download>Download</a>
+            </div>
         </div>
-      </div>
 
-      <div class="resume-viewer">
-        <object data="resume.pdf" type="application/pdf" class="resume-object">
-          <p class="muted">
-            Your browser could not display the PDF here.
-            <a class="inline-link" href="resume.pdf" target="_blank" rel="noreferrer">Open it in a new tab</a>.
-          </p>
-        </object>
-      </div>
+        <div id="resumePanel" class="resume-panel">
+            <div class="resume-viewer">
+                <iframe
+                    class="resume-frame"
+                    src="resume.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=1"
+                    title="Bilal Saad Resume"
+                ></iframe>
+            </div>
+        </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" class="section">
       <h2>Contact</h2>
 
