@@ -9,154 +9,82 @@
 </head>
 
 <body>
+  <!-- Background layers -->
+  <div class="bg">
+    <div class="stars"></div>
+    <div class="stars stars2"></div>
+    <div class="stars stars3"></div>
+  </div>
+
   <!-- NAV -->
   <header class="header">
     <nav class="nav">
-      <a class="brand" href="#top">
-        <img class="avatar" src="assets/headshot.jpg" alt="Bilal Saad headshot" />
-        <span class="brand-name">Bilal Saad</span>
-      </a>
+      <a class="logo" href="#top">&lt;Portfolio /&gt;</a>
 
       <div class="nav-links">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
         <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
         <a href="#resume">Resume</a>
         <a href="#contact">Contact</a>
       </div>
+
+      <div class="nav-right"></div>
     </nav>
+  </header>
 
-    <!-- HERO -->
-    <div id="top" class="hero">
-      <div class="hero-left">
-        <p class="pill">Software Engineering • Full-Stack • Data</p>
-
-        <h1 class="hero-title">Bilal Saad</h1>
-        <h2 class="hero-subtitle">Full-Stack Developer</h2>
-
-        <p class="sub">
-          I build full-stack apps (FastAPI / React / Next.js) and data dashboards (Power BI).
-          Below are my best projects, skills, and experience.
-        </p>
-
-        <!-- Animated ticker -->
-        <div class="ticker" aria-label="Skills ticker">
-          <div class="ticker-track">
-            <span>FastAPI</span><span>React</span><span>Next.js</span><span>PostgreSQL</span><span>Power BI</span><span>DAX</span>
-            <span>ETL</span><span>REST APIs</span><span>Git</span><span>AWS</span><span>SQL</span><span>Python</span>
-
-            <span>FastAPI</span><span>React</span><span>Next.js</span><span>PostgreSQL</span><span>Power BI</span><span>DAX</span>
-            <span>ETL</span><span>REST APIs</span><span>Git</span><span>AWS</span><span>SQL</span><span>Python</span>
-          </div>
-        </div>
-
-        <div class="cta-row">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn" href="#resume">View Resume</a>
-          <a class="btn ghost" href="resume.pdf" download>Download Resume</a>
-          <a class="btn ghost" href="https://github.com/BilalSaad1" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="btn ghost" href="https://www.linkedin.com/in/bilalsaad123" target="_blank" rel="noreferrer">LinkedIn</a>
-        </div>
-
-        <div class="quick-stats">
-          <div class="stat">
-            <div class="stat-num">5+</div>
-            <div class="stat-label">Public repos</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">Full-Stack</div>
-            <div class="stat-label">FastAPI • React • Next.js</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">Power BI</div>
-            <div class="stat-label">Dashboards • Metrics</div>
-          </div>
-        </div>
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="hero-inner">
+      <div class="hero-avatar-wrap">
+        <img class="hero-avatar" src="assets/headshot.jpg" alt="Bilal Saad headshot" />
       </div>
 
-      <div class="hero-right">
-        <div class="card highlight">
-          <h3>Featured</h3>
-          <p class="muted">UWO Expired Patent Website</p>
-          <p class="card-text">
-            Platform to find inactive patents (expired by time/fees), with a clean UI and automated ingestion.
-          </p>
-          <div class="tag-row">
-            <span class="tag">FastAPI</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">Next.js</span>
-          </div>
-          <a class="link" href="https://github.com/BilalSaad1/UWO_Patent_Website" target="_blank" rel="noreferrer">
-            View repo →
-          </a>
-        </div>
+      <p class="hero-kicker typewriter">HELLO, WORLD. I AM</p>
 
-        <div class="card">
-          <h3>What I build</h3>
-          <ul class="list">
-            <li>Full-stack apps with clean UX</li>
-            <li>APIs and databases that scale</li>
-            <li>Dashboards that drive decisions</li>
-          </ul>
-        </div>
+      <h1 class="hero-title">
+        Bilal<br/>Saad
+      </h1>
+
+      <p class="hero-role">Software Engineer</p>
+
+      <p class="hero-tagline">
+        Building scalable web applications and data dashboards.
+      </p>
+
+      <div class="hero-icons">
+        <a class="icon-link" href="https://github.com/BilalSaad1" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+        <a class="icon-link" href="https://www.linkedin.com/in/bilalsaad123" target="_blank" rel="noreferrer" aria-label="LinkedIn">IN</a>
+        <a class="icon-link" href="mailto:Bsaad2@uwo.ca" aria-label="Email">EM</a>
+      </div>
+
+      <div class="hero-actions">
+        <a class="btn primary" href="#projects">View My Work</a>
+        <a class="btn" href="#resume">View Resume</a>
+        <a class="btn ghost" href="resume.pdf" download>Download Resume</a>
       </div>
     </div>
-  </header>
+  </section>
 
   <main class="container">
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="section-head">
-        <h2>Projects</h2>
-      </div>
-      <div id="projectsGrid" class="grid"></div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-
-      <div class="grid two">
-        <div class="card">
-          <h3>Languages</h3>
-          <div class="pill-row">
-            <span class="pill2">Python</span>
-            <span class="pill2">Java</span>
-            <span class="pill2">C++</span>
-            <span class="pill2">C#</span>
-            <span class="pill2">JavaScript</span>
-            <span class="pill2">TypeScript</span>
-            <span class="pill2">SQL</span>
-            <span class="pill2">HTML</span>
-            <span class="pill2">CSS</span>
-          </div>
-
-          <h3 class="subhead">Familiar</h3>
-          <div class="pill-row">
-            <span class="pill2">Bash</span>
-            <span class="pill2">PowerShell</span>
-            <span class="pill2">VBA</span>
-            <span class="pill2">JSON</span>
-            <span class="pill2">YAML</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Frameworks / Tools</h3>
-          <div class="pill-row">
-            <span class="pill2">FastAPI</span>
-            <span class="pill2">React</span>
-            <span class="pill2">Next.js</span>
-            <span class="pill2">Node.js</span>
-            <span class="pill2">PostgreSQL</span>
-            <span class="pill2">MongoDB</span>
-            <span class="pill2">Power BI</span>
-            <span class="pill2">Power Query</span>
-            <span class="pill2">DAX</span>
-            <span class="pill2">Git</span>
-            <span class="pill2">AWS</span>
-          </div>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="card">
+        <p class="muted">
+          I build full-stack apps (FastAPI / React / Next.js) and data dashboards (Power BI). I like shipping real products,
+          clean UI, and systems that scale.
+        </p>
+        <div class="pill-row">
+          <span class="pill2">FastAPI</span>
+          <span class="pill2">React</span>
+          <span class="pill2">Next.js</span>
+          <span class="pill2">PostgreSQL</span>
+          <span class="pill2">Power BI</span>
+          <span class="pill2">DAX</span>
+          <span class="pill2">ETL</span>
+          <span class="pill2">AWS</span>
         </div>
       </div>
     </section>
@@ -165,7 +93,7 @@
     <section id="experience" class="section">
       <h2>Experience</h2>
 
-      <div class="timeline">
+      <div class="stack">
         <div class="card">
           <div class="row">
             <div>
@@ -198,9 +126,42 @@
       </div>
     </section>
 
-    <!-- RESUME (embedded) -->
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div id="projectsGrid" class="grid"></div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+
+      <div class="grid two">
+        <div class="card">
+          <h3>Languages</h3>
+          <div class="pill-row">
+            <span class="pill2">Python</span><span class="pill2">Java</span><span class="pill2">C++</span><span class="pill2">C#</span>
+            <span class="pill2">JavaScript</span><span class="pill2">TypeScript</span><span class="pill2">SQL</span>
+            <span class="pill2">HTML</span><span class="pill2">CSS</span>
+            <span class="pill2">Bash</span><span class="pill2">PowerShell</span><span class="pill2">VBA</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Frameworks / Tools</h3>
+          <div class="pill-row">
+            <span class="pill2">FastAPI</span><span class="pill2">React</span><span class="pill2">Next.js</span><span class="pill2">Node.js</span>
+            <span class="pill2">PostgreSQL</span><span class="pill2">MongoDB</span>
+            <span class="pill2">Power BI</span><span class="pill2">Power Query</span><span class="pill2">DAX</span>
+            <span class="pill2">Git</span><span class="pill2">AWS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
     <section id="resume" class="section">
-      <div class="section-head resume-head">
+      <div class="section-head">
         <h2>Resume</h2>
         <div class="resume-actions">
           <a class="btn" href="resume.pdf" target="_blank" rel="noreferrer">Open in new tab</a>
@@ -209,10 +170,9 @@
       </div>
 
       <div class="resume-viewer">
-        <!-- Works in most browsers; if it fails, the fallback appears -->
         <object data="resume.pdf" type="application/pdf" class="resume-object">
           <p class="muted">
-            Your browser couldn’t display the PDF here.
+            Your browser could not display the PDF here.
             <a class="inline-link" href="resume.pdf" target="_blank" rel="noreferrer">Open it in a new tab</a>.
           </p>
         </object>
@@ -227,7 +187,7 @@
         <div class="card">
           <p class="muted">Fastest way to reach me</p>
           <p class="big">Bsaad2@uwo.ca</p>
-          <div class="cta-row">
+          <div class="hero-actions">
             <a class="btn primary" href="mailto:Bsaad2@uwo.ca">Email me</a>
             <a class="btn" href="resume.pdf" target="_blank" rel="noreferrer">Open Resume</a>
           </div>
