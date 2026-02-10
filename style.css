@@ -218,16 +218,25 @@ body{
   border:1px solid var(--border);
   background: rgba(255,255,255,0.03);
   box-shadow: var(--shadow);
+  padding: 16px;
+  display: grid;
+  justify-items: center;
+  gap: 14px;
 }
+
 .photo{
-  width:100%;
+  width: 220px;           
   height: 220px;
+  border-radius: 9999px;  
   object-fit: cover;
-  object-position: 50% 35%; /* centers face higher */
-  display:block;
+  object-position: 50% 35%;
+  display: block;
+  border: 1px solid var(--border);
   filter: contrast(1.05);
 }
+
 .photo-caption{
+  width: 100%;
   padding: 12px 14px;
   border-top:1px solid var(--border);
 }
