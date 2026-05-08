@@ -7,17 +7,17 @@ window.PROJECTS = [
     demo: ""
   },
   {
+    title: "Housing Market Predictor",
+    desc: "Streamlit app predicting housing prices using a Kaggle dataset with ML-based feature comparisons.",
+    tags: ["Python", "Streamlit", "ML"],
+    repo: "https://github.com/BilalSaad1/Python-Housing-Market-Predictor",
+    demo: ""
+  },
+  {
     title: "Full-Stack Website",
     desc: "Full-stack MERN web app: search superheroes, build lists, and rate/review with JWT auth.",
     tags: ["JavaScript", "MERN", "JWT"],
     repo: "https://github.com/BilalSaad1/Full-Stack-Website",
-    demo: ""
-  },
-  {
-    title: "Virtual Store",
-    desc: "Online store with cart and checkout system using Stripe API.",
-    tags: ["HTML", "JavaScript", "Stripe"],
-    repo: "https://github.com/BilalSaad1/Virtual-Store",
     demo: ""
   },
   {
@@ -28,10 +28,10 @@ window.PROJECTS = [
     demo: ""
   },
   {
-    title: "Housing Market Predictor",
-    desc: "Streamlit app predicting housing price using Kaggle dataset with feature comparisons.",
-    tags: ["Python", "Streamlit", "ML"],
-    repo: "https://github.com/BilalSaad1/Python-Housing-Market-Predictor",
+    title: "Virtual Store",
+    desc: "Online store with cart and checkout system using Stripe API.",
+    tags: ["HTML", "JavaScript", "Stripe"],
+    repo: "https://github.com/BilalSaad1/Virtual-Store",
     demo: ""
   }
 ];
